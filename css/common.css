@@ -1,0 +1,36 @@
+* {
+    margin:0; 
+    padding:0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+}
+body{
+    background: #fff;
+    --baise:#fff;
+    --black:black;
+    --wubai:500px;
+    --sanbai:300px;
+    /* perspective: 1000px; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+html{
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    margin: 0px;
+}
+input{
+    border: 0;
+    border-radius: none;
+    outline: none;
+}
+
