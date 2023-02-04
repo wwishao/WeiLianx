@@ -49,7 +49,7 @@
 .logo {
     width: 50px;
     height: 50px;
-    background: url(/images/LOGO.png) no-repeat;
+    background: url(../images/LOGO.png) no-repeat;
     background-size: 50px;
 }
 
