@@ -11,8 +11,11 @@ $(function () {
     // 设置导航的状态
     $(window).scroll(function () {
         if ($(this).scrollTop() >= $(".about")[0].offsetTop - 5) {
+        // $(".bg ").css("background","#fff");
             $(".nav").addClass("sticky");
         } else if ($(this).scrollTop() <= $(".about")[0].offsetTop) {
+        // $(".bg ").css("background","url(../images/bg2.png)  no-repeat").css("background-size","cover");
+
             $(".nav").removeClass("sticky");
         }
     });
@@ -58,10 +61,10 @@ $(function () {
 
 $(".card2").hover(function () {
         // over
-        $(".card").css("transform","scale(0.9)",).css("left","-10%")
+        $(".card").css("transform","scale(0.9)",).css("left","-10%");
     }, function () {
         // out
-        $(".card").css("transform","scale(1.2)").css("left","-20%")
+        $(".card").css("transform","scale(1.2)").css("left","-20%");
     }
 );
    
