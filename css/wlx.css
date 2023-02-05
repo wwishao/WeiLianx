@@ -328,7 +328,23 @@ a
     bottom: 10px;
 }
 .works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:larger;
+    font-weight: 800;
     width: 100vw;
     height: 100vh;
     background-color: rgb(78, 205, 216);
+}
+
+.works_box_text {
+    width: 400px;
+}
+.works_box span {
+    display: inline-block;
+    margin-left: 20px;
+    overflow: hidden;
+    width: 0;
+    animation: TextRun 2.5s steps(18, end) infinite;
 }
