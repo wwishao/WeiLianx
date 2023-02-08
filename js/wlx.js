@@ -71,11 +71,21 @@ $(".card2").hover(function () {
 // menuBox的点击
 $(".menuBox").click(function (e) { 
     e.preventDefault();
-    $(".menu_nav").css("right",0)
+    $(".menu_nav").css("right",0);
+    $(".mask").addClass("show");
 });
 
-
-
+// menu_nav_Btn点击
+$("#menu_nav_Btn").click(function (e) { 
+    e.preventDefault();
+    $(".menu_nav").css("right","-70vw");
+    $(".mask").removeClass("show");
+});
+// show点击
+$(".mask").click(function (e) { 
+    e.preventDefault();
+    $("#menu_nav_Btn")[0].click()
+});
 
 
 
