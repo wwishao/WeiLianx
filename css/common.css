@@ -15,6 +15,8 @@ body{
     /* perspective: 1000px; */
     /* overflow-x: hidden;
     overflow-y: hidden; */
+    overflow-x: hidden;
+
 }
 html{
     /* overflow-y: hidden; */

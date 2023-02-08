@@ -68,8 +68,11 @@ $(".card2").hover(function () {
     }
 );
    
-
-
+// menuBox的点击
+$(".menuBox").click(function (e) { 
+    e.preventDefault();
+    $(".menu_nav").css("right",0)
+});
 
 
 
