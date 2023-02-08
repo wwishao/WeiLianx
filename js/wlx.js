@@ -59,27 +59,27 @@ $(function () {
 
     }
 
-$(".card2").hover(function () {
-        // over
-        $(".card").css("transform","scale(0.9)",).css("left","-10%");
-    }, function () {
-        // out
-        $(".card").css("transform","scale(1.2)").css("left","-20%");
-    }
-);
+// $(".card2").hover(function () {
+//         // over
+//         $(".card").css("transform","scale(0.9)",).css("left","-10%");
+//     }, function () {
+//         // out
+//         $(".card").css("transform","scale(1.2)").css("left","-20%");
+//     }
+// );
    
 // menuBox的点击
 $(".menuBox").click(function (e) { 
     e.preventDefault();
     $(".menu_nav").css("right",0);
-    $(".mask").addClass("show");
+    $(".mask").addClass("show").show();
 });
 
 // menu_nav_Btn点击
 $("#menu_nav_Btn").click(function (e) { 
     e.preventDefault();
     $(".menu_nav").css("right","-70vw");
-    $(".mask").removeClass("show");
+    $(".mask").removeClass("show").hide();;
 });
 // show点击
 $(".mask").click(function (e) { 
