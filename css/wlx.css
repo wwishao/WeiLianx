@@ -207,8 +207,8 @@
 .Mytext::after {
     content: "";
     position: absolute;
-    width: 2px;
-    height: 6vh;
+    width: 4px;
+    height: 20vh;
     background-color: #9631eb;
     animation: shubiao 1.2s infinite;
 }
@@ -381,7 +381,10 @@
 }
 
 @media (max-width:992px) {
-
+    .Mytext::after {
+        width: 2px;
+        height: 6vh;
+    }
     .nav_box {
         padding: 10px 80px;
     }
@@ -412,6 +415,10 @@
     .card2_text p {
         padding: 3px 0;
         font-size: 2.1vw;
+    }
+    .car_time {
+        right: 30px;
+        bottom: 10px;
     }
 
 }
@@ -486,7 +493,7 @@
     position: absolute;
     font-size: larger;
     right: 10px;
-    bottom: 10px;
+    bottom: -30px;
 }
 
 .works {
