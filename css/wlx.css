@@ -98,7 +98,7 @@
 
 .sticky {
     position: fixed;
-    z-index: 99;
+    z-index: 888;
     box-shadow: rgb(0 0 0 / 10%) 0 5px 20px;
     backdrop-filter: blur(100px) saturate(180%);
 }
@@ -399,7 +399,7 @@
     .title::after {
         bottom: -4px;
         left: 100px;
-        width: 140px;
+        width: 120px;
     }
     .card2 {
         position: relative;
@@ -456,7 +456,7 @@
     }
     .card2 {
         position: relative;
-        bottom: 50px;
+        bottom: 80px;
         left: 0%;
         text-align: center;
         width: 400px;
@@ -467,7 +467,7 @@
     }
     .card2_text p {
         padding: 3px 0;
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
     .car_time {
         right: 30px;
