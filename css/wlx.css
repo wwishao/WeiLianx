@@ -42,6 +42,7 @@
 }
 .menuBtn::before {
     top: 20px;
+    width: 25px;
 }
 .mask {
     position: fixed;
@@ -441,6 +442,7 @@
         align-items: center;
         width: 100vw;
         height: 100vh;
+        z-index: -9;
     }
     .title::after {
         bottom: -4px;
