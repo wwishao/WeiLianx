@@ -29,7 +29,8 @@
     background-color: #fff;
 }
 #menu_nav_Btn {
-    position: relative;
+    position: absolute;
+    top: 2%;
     left: 80%;
 }
 .menuBtn::after,
@@ -41,15 +42,15 @@
     border-radius: 2px;
     background-color: #fff;
 }
-.nav .menuBtn::after {
+ .menuBtn::after {
     top: 10px;
 }
-.nav .menuBtn::before {
+ .menuBtn::before {
     top: 20px;
     width: 25px;
 }
 /* ---------- */
-#menu_nav_Btn .menuBtn {
+/* #menu_nav_Btn .menuBtn {
     width: 0;
 }
 #menu_nav_Btn .menuBtn::after,.menuBtn::before{
@@ -67,12 +68,8 @@
 #menu_nav_Btn .menuBtn::before {
     transform: rotate(-45deg);
 
-}
-@keyframes menuAnimate {
-    to{
+} */
 
-    }
-}
 /* ---------- */
 .mask {
     position: fixed;
@@ -99,8 +96,8 @@
      width: 70vw;
      height: 100vh;
      background-color: rgba(255, 255, 255, 0.1);
-     backdrop-filter: blur(300px);
-    -webkit-backdrop-filter: blur(300px);
+     backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
      font-size: 20px;
      transition: all .3s;
      z-index: 999;
