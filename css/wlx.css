@@ -56,7 +56,7 @@
     transition: all .35s;
 }
 .show {
-    z-index: 500;
+    z-index: 899;
     background-color: rgba(0,0,0,.3);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -442,7 +442,7 @@
         align-items: center;
         width: 100vw;
         height: 100vh;
-        z-index: -9;
+        z-index: -49!important;
     }
     .title::after {
         bottom: -4px;
@@ -473,7 +473,7 @@
     }
     .car_time {
         right: 30px;
-        bottom: 50px;
+        bottom: 50px!important;
     }
     
 }
