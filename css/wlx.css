@@ -7,15 +7,16 @@
 .head {
     position: relative;
     top: 0px;
-    z-index: 99;
     width: 100vw;
     height: 100vh;
+    z-index: 999;
 }
 
 .menuBox {
     display: none;
     width: 40px;
     height: 40px;
+    transition: all .35s;
 }
 
 .menuBtn {
@@ -27,7 +28,10 @@
     border-radius: 2px;
     background-color: #fff;
 }
-
+#menu_nav_Btn {
+    position: relative;
+    left: 80%;
+}
 .menuBtn::after,
 .menuBtn::before {
     content: "";
@@ -37,13 +41,39 @@
     border-radius: 2px;
     background-color: #fff;
 }
-.menuBtn::after {
+.nav .menuBtn::after {
     top: 10px;
 }
-.menuBtn::before {
+.nav .menuBtn::before {
     top: 20px;
     width: 25px;
 }
+/* ---------- */
+#menu_nav_Btn .menuBtn {
+    width: 0;
+}
+#menu_nav_Btn .menuBtn::after,.menuBtn::before{
+    content: "";
+    position: absolute;
+    top: auto;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+#menu_nav_Btn .menuBtn::after {
+    transform: rotate(45deg);
+}
+#menu_nav_Btn .menuBtn::before {
+    transform: rotate(-45deg);
+
+}
+@keyframes menuAnimate {
+    to{
+
+    }
+}
+/* ---------- */
 .mask {
     position: fixed;
     display: none;
@@ -68,6 +98,7 @@
      right: -70vw;
      width: 70vw;
      height: 100vh;
+     background-color: rgba(255, 255, 255, 0.1);
      backdrop-filter: blur(300px);
     -webkit-backdrop-filter: blur(300px);
      font-size: 20px;
@@ -93,7 +124,7 @@
     background: url(../images/bg2.png) center no-repeat;
     background-size: cover;
     overflow: hidden;
-    z-index: -50;
+    z-index: -9999;
     /* backdrop-filter: blur(2px); */
 }
 
@@ -101,7 +132,9 @@
     position: fixed;
     z-index: 888;
     box-shadow: rgb(0 0 0 / 10%) 0 5px 20px;
-    backdrop-filter: blur(100px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 
 .nav {
@@ -287,7 +320,7 @@
     background-color: #fff;
     /* background: linear-gradient(43deg, rgb(255 17 0 / 20%), rgb(0 142 255 / 20%),rgb(137 255 0 / 20%)); */
     animation: bgMove 10s linear infinite;
-    z-index: 88;
+    /* z-index: 88; */
 }
 
 .about::before {
@@ -442,7 +475,7 @@
         align-items: center;
         width: 100vw;
         height: 100vh;
-        z-index: -49!important;
+        z-index: -99!important;
     }
     .title::after {
         bottom: -4px;
@@ -467,13 +500,16 @@
         padding: 20px 0;
         border-radius: 10px;
     }
+    .card2:hover {
+        transform: none;
+    }
     .card2_text p {
         padding: 3px 0;
         font-size: 3.5vw;
     }
     .car_time {
         right: 30px;
-        bottom: 50px!important;
+        bottom: 0px!important;
     }
     
 }

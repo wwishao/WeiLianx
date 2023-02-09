@@ -59,6 +59,7 @@ $(function () {
 
     }
 
+    
 // $(".card2").hover(function () {
 //         // over
 //         $(".card").css("transform","scale(0.9)",).css("left","-10%");
